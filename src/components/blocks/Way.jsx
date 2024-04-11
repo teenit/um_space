@@ -21,10 +21,13 @@ const Way = ({activeHandler}) => {
             title:"Кінезіотерапія",
             key: "kinez"
         },{
+            title:"Заняття з живопису",
+            key: "painting"
+        },{
             title:"АРТ - терапія",
             key: "art"
         },{
-            title:"Підготовка до школ",
+            title:"Підготовка до школи",
             key: "preschool"
         },{
             title:"Логопедична група для наймолодших",

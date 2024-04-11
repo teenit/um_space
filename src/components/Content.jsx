@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import imgLove from './../img/favorite.png';
 import imgGarant from './../img/icons8-guarantee.png';
 import imgLight from './../img/icons8-light-on-100.png';
@@ -7,10 +7,26 @@ import imgMaryna from './../img/maryna.JPG';
 import Gallery from "./blocks/Gallery";
 import Form from "./blocks/Form";
 import Way from "./blocks/Way";
+import Modal from "./blocks/Modal";
 
 
 const Content = () => {
-
+    const [state, setState] = useState({
+        modalWay:false
+    })
+    const closeHendler = () => {
+        setState({
+            ...state,
+            modalWay: false
+        })
+    }
+    const activeHandler = (key) => {
+        setState({
+            ...state,
+            key,
+            modalWay: true
+        })
+    }
     return (
         <div className="Content">
             <div className="block">
@@ -58,12 +74,24 @@ const Content = () => {
                             <div className="text">
                                 <div className="title">
                                     <div className="title-text">
-                                        <h2>Авторська методика</h2>
+                                        <h2>Про нас</h2>
                                     </div>
                                 </div>
-                                <p>Наш центр працює за авторською методикою Марини Усенко - логопеда - дефектолога із 25 річним досвідом роботи. </p>
-                                <p>Авторська методика допомогла вже більш ніж 10000 дітей заговорити правильно і красиво та отримати квиток в щасливе майбутнє.</p>
-                                <p>Ми працюємо з діткам із затримкою мовленевого розвитку, з важкими мовленевими порушеннями, синдромом аспергера, РАС</p>
+                                
+                                <p>UMSCHOOL - міжнародна компанія, яка активно працює за авторською методикою Марини Усенко та допомагає дітям у всіх країнах світу з 2018 року.</p>
+                                <br />
+        <h3>Цінності</h3>
+        <ul>
+            <li>Любов до дітей</li>
+            <li>Високий рівень професіоналізму спеціалістів</li>
+            <li>Індивідуальний підхід до кожної дитини</li>
+        </ul>
+        <br />
+        <h3>Наші методи</h3>
+        <p>Ми використовуємо авторські напрацювання, які стали результатом 60 років праці родини засновниці UMSCHOOL Усенко Марини Геннадіївни. Ефективність методик перевірена на тисячах дітей, які зараз ведуть повноцінне життя.</p>
+        <br />
+        <h3>Наша мета</h3>
+        <p>Ми завжди націлені на результат, тому прислухаємось до побажань клієнтів. Нашою основною метою є вивести розвиток дитини на норму, провести за руку від особливої до великої, виховати генія нового покоління.</p>
                                 <div className="button">
                                     <button className="btn">Записатися</button>
                                 </div>
@@ -77,7 +105,7 @@ const Content = () => {
                 </div>
             </div>
             <div className="triggers">
-                <Way />
+                <Way activeHandler={activeHandler}/>
             </div>
             <div className="triggers">
                 <div className="content">
@@ -142,7 +170,10 @@ const Content = () => {
                     </div>
                 </div>
             </div>
-
+            {
+                state.modalWay && <Modal element={state.key} close={closeHendler}/>
+            }
+            
             <div className="form">
                 <div className="content">
                     <Form />

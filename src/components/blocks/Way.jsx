@@ -9,18 +9,36 @@ import i7 from './../../img/icons/7-psy-group.png';
 import i9 from './../../img/icons/9-english.png';
 import i10 from './../../img/icons/10-music.png';
 import i8 from './../../img/icons/8-dance.png';
-const Way = () => {
+const Way = ({activeHandler}) => {
     const ways = [
-        "Логопед - дефектолог",
-        "Дитячий психолог",
-        "Кінезіотерапія",
-        "Живопис та ліплення ",
-        "АРТ - терапія",
-        "Підготовка до школи",
-        "Логопедична група для наймолодших ",
-        "Англійська мова",
-        "Музичні заняття",
-        "Танці",
+        {
+            title:"Логопед - дефектолог",
+            key: "logoped"
+        },{
+            title:"Дитячий психолог",
+            key: "child_psy"
+        },{
+            title:"Кінезіотерапія",
+            key: "kinez"
+        },{
+            title:"АРТ - терапія",
+            key: "art"
+        },{
+            title:"Підготовка до школ",
+            key: "preschool"
+        },{
+            title:"Логопедична група для наймолодших",
+            key: "group"
+        },{
+            title:"Англійська мова",
+            key: "english"
+        },{
+            title:"Музичні заняття",
+            key: "music"
+        },{
+            title:"Танці",
+            key: "dance"
+        },
     ]
     const waysImg = [
         i1, i2, i3, i4, i5, i6, i7, i9, i10, i8,
@@ -36,9 +54,9 @@ const Way = () => {
                 {
                     ways.map((item, ind) => {
                         return (
-                            <div className="card">
+                            <div className="card" onClick={()=>activeHandler(item.key)}>
                                 <img src={waysImg[ind]} alt="" />
-                                <span>{item}</span>
+                                <span>{item.title}</span>
                             </div>
                         )
                     })

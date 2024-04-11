@@ -7,6 +7,7 @@ $liteBlue: #AAD9BB;
 // $yellow: #F9F7C9;
 $darkBlue: #B6E388;
 $green: #B6E388;
+$greenOpa: #b5e38868;
 $yellow: #fff;
 $textColor: #121264;
 body {
@@ -433,4 +434,62 @@ body {
     right: 5px;
     bottom: 5px;
     left: 5px;
+}
+.Portal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: $greenOpa;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.Modal {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &-title {
+        text-align: center;
+    }
+    &-content {
+        max-height: 400px;
+        overflow-y: auto;
+        border-bottom: solid 1px $liteBlue;
+        padding-bottom: 10px;
+    }
+    &-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00000033;
+    }
+    &-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.Grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    display: grid;
 }

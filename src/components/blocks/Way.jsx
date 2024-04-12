@@ -9,13 +9,14 @@ import i7 from './../../img/icons/7-psy-group.png';
 import i9 from './../../img/icons/9-english.png';
 import i10 from './../../img/icons/10-music.png';
 import i8 from './../../img/icons/8-dance.png';
+import b3 from './../../img/icons/b3.png';
 const Way = ({activeHandler}) => {
     const ways = [
         {
             title:"Логопед - дефектолог",
             key: "logoped"
         },{
-            title:"Дитячий психолог",
+            title:"Корекційний психолог",
             key: "child_psy"
         },{
             title:"Кінезіотерапія",
@@ -54,6 +55,7 @@ const Way = ({activeHandler}) => {
                 </div>
             </div>
             <div className="ways">
+                <img className="b3" src={b3} alt="" />
                 {
                     ways.map((item, ind) => {
                         return (

@@ -202,7 +202,7 @@ const Modal = ({ element, close }) => {
             content: Logoped
         },
         child_psy: {
-            title: "Дитячий психолог",
+            title: "Корекційний психолог",
             content: ChildPsy
         },
         kinez: {

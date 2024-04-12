@@ -122,10 +122,10 @@ $yellow: #fff;
                 max-width: 350px;
                 box-sizing: border-box;
                 padding: 15px 10px;
-                border: solid 1px $yellow;
+                border: solid 1px $green;
                 border-radius: 30px;
                 font-size: 16px;
-                background-color: $yellow;
+                //background-color: $green;
             }
         }
     }
@@ -143,12 +143,18 @@ $yellow: #fff;
             margin: auto;
             font-size: 24px;
         }
+        position: relative;
     }
     .ways {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 30px;
         row-gap: 50px;
+        .b3 {
+            position: absolute;
+            top: -40px;
+            width: 40px;
+        }
         .card {
             position: relative;
            display: flex;
@@ -156,6 +162,10 @@ $yellow: #fff;
            align-items: center;
            justify-content: center;
            gap: 10px;
+           cursor: pointer;
+           &:hover span {
+            background-color: #AAD9BB;
+           }
         }
         img {
             width: 100px;
@@ -170,4 +180,118 @@ $yellow: #fff;
         }
 
     }
+ }
+
+ .Shlyah {
+    position: relative;
+    .b2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        width: 80px;
+    }
+    &-title {
+        text-align: center;
+    }
+    &-content {
+
+        font-size: 20px;
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 6px 1fr;
+        
+            gap: 20px;
+            padding-top: 30px;
+        }
+        &-left {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 65px;
+            gap: 60px;
+            text-align: right;
+        }
+        &-right {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            margin-top: 40px;
+            grid-template-rows: 65px;
+
+            padding-top: 30px;
+        }
+        &-center {
+            background-color: $green;
+            border-radius: 8px;
+        }
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .cards-line {
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr 100px 1fr 100px 1fr;
+        align-items: center;
+        column-gap: 20px;
+        justify-content: space-between;
+        &.two {
+            grid-template-columns: 1fr 100px 1fr 100px 1fr 1fr 100px;
+        }
+        &.reverse {
+            grid-direction: row-reverse;
+        }
+
+        .krok {
+            padding: 20px;
+            width: max-content;
+            margin: auto;
+            background-color: $green;
+            border-radius: 30px;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+        .card-img {
+            width: 100px;
+            &.rotate90 {
+                transform: rotate(90deg);
+            }
+        }
+        .opis {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 16px;
+        }
+    }
+    // .card-img {
+    //     width: 100px;
+    // }
+ }
+ .FeedBack {
+    overflow-x: scroll;
+    width: 100%;
+    padding-bottom: 10px;
+ }
+ .FeedBack--wrap{
+    display: flex;
+    column-gap: 16px;
+ }
+ .FeedBack--img {
+    width: 300px;
+    border-radius: 8px;
+ }
+ .FeedBack--card {
+    background-color: #B6E388;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
  }

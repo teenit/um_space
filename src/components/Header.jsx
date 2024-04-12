@@ -4,6 +4,7 @@ import youtubeImg from './../img/youtube.svg';
 import instaImg from './../img/instagram.svg';
 import facebookImg from './../img/facebook.svg';
 import phoneImg from './../img/phone.svg';
+import b4 from './../img/icons/b4.png'
 const Header = () => {
 
     return (
@@ -47,7 +48,7 @@ const Header = () => {
                                     <p>Preschool, початкова школа</p>
                                 </div>
                                 <div className="button">
-                                    <button className="btn">Записатися</button>
+                                    <button className="btn">Записатися <img className="b4" src={b4} alt="" /></button>
                                 </div>
                             </div>
                         </div>

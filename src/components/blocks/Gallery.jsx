@@ -4,7 +4,7 @@ import img2 from './../../img/photo_15_2024-04-01_01-18-26.jpg';
 import img3 from './../../img/photo_19_2024-04-01_01-18-26.jpg';
 import img4 from './../../img/photo_1_2024-04-01_01-18-26.jpg';
 import img5 from './../../img/photo_25_2024-04-01_01-18-26.jpg';
-import img6 from './../../img/photo_32_2024-04-01_01-18-26.jpg';
+import img6 from './../../img/photo_21_2024-04-01_01-18-26.jpg';
 import img7 from './../../img/photo_14_2024-04-01_01-18-26.jpg';
 import img8 from './../../img/photo_40_2024-04-01_01-18-26.jpg';
 import img9 from './../../img/photo_42_2024-04-01_01-18-26.jpg';

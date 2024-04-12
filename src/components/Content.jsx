@@ -8,6 +8,9 @@ import Gallery from "./blocks/Gallery";
 import Form from "./blocks/Form";
 import Way from "./blocks/Way";
 import Modal from "./blocks/Modal";
+import Shlyah from "./blocks/Shlyah";
+import FeedBack from "./blocks/FeedBack";
+import b4 from './../img/icons/b4.png';
 
 
 const Content = () => {
@@ -94,7 +97,7 @@ const Content = () => {
                                 <h3>Наша мета</h3>
                                 <p>Ми завжди націлені на результат, тому прислухаємось до побажань клієнтів. Нашою основною метою є вивести розвиток дитини на норму, провести за руку від особливої до великої, виховати генія нового покоління.</p>
                                 <div className="button">
-                                    <button className="btn">Записатися</button>
+                                    <button className="btn">Записатися <img className="b4" src={b4} alt="" /></button>
                                 </div>
 
                             </div>
@@ -161,6 +164,9 @@ const Content = () => {
                 </div>
             </div>
             <div className="block">
+                <Shlyah />
+            </div>
+            <div className="block">
                 <div className="title">
                     <div className="title-text">
                         <h2>Наші світлини</h2>
@@ -206,6 +212,16 @@ const Content = () => {
             <div className="form">
                 <div className="content">
                     <Form />
+                </div>
+            </div>
+            <div className="block">
+                <div className="title">
+                        <div className="title-text center">
+                            <h2>Відгуки</h2>
+                        </div>
+                    </div>
+                <div className="content">
+                    <FeedBack />
                 </div>
             </div>
         </div>

@@ -19,9 +19,9 @@ const Gallery = () =>{
         <div className="Gallery">
             <div className="wrap">
                 {
-                    mas.map((item)=>{
+                    mas.map((item,index)=>{
                         return (
-                            <div className="img" style={{backgroundImage:`url(${item})`}}></div>
+                            <div key={index} className="img" style={{backgroundImage:`url(${item})`}}></div>
                         )
                     })
                 }

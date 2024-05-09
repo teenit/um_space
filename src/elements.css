@@ -1,0 +1,293 @@
+.star-five {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: #fff;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #fff;
+  border-left: 100px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+
+.star-five:before {
+  border-bottom: 80px solid #fff;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+}
+
+.star-five:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #fff;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  content: "";
+}
+
+.Gallery {
+  width: 100%;
+}
+.Gallery .wrap {
+  width: 100%;
+  height: 1320px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #B6E388;
+  gap: 25px;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.Gallery .wrap .img {
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.Form .items__wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+.Form .items__wrap .social__wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Form .items__wrap .phone__wrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Form .items__wrap .phone__wrap a {
+  color: #0A0D63;
+  font-size: 1.2em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.Form .slogan {
+  max-width: 80%;
+  margin: auto;
+}
+.Form .form {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.Form .form .input {
+  margin-top: 30px;
+}
+.Form .form .input input {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  border: solid 1px #B6E388;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.Way .title {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+.Way .title-text {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 30px;
+  margin: auto;
+  font-size: 24px;
+}
+.Way .ways {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  row-gap: 50px;
+}
+.Way .ways .b3 {
+  position: absolute;
+  top: -40px;
+  width: 40px;
+}
+.Way .ways .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.Way .ways .card:hover span {
+  background-color: #AAD9BB;
+}
+.Way .ways img {
+  width: 100px;
+}
+.Way .ways span {
+  background-color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.Shlyah {
+  position: relative;
+}
+.Shlyah-title {
+  text-align: center;
+}
+.Shlyah-content {
+  font-size: 20px;
+}
+.Shlyah-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 6px 1fr;
+  gap: 20px;
+  padding-top: 30px;
+}
+.Shlyah-content-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 65px;
+  gap: 60px;
+  text-align: right;
+}
+.Shlyah-content-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  margin-top: 40px;
+  grid-template-rows: 65px;
+  padding-top: 30px;
+}
+.Shlyah-content-center {
+  background-color: #B6E388;
+  border-radius: 8px;
+}
+.Shlyah .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 50px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.Shlyah .cards-line {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr 100px 1fr 100px 1fr;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+}
+.Shlyah .cards-line:nth-child(even) div {
+  display: flex;
+  justify-content: center;
+}
+.Shlyah .cards-line:nth-last-child(-n+1) .card-img {
+  transform: rotate(180deg);
+}
+.Shlyah .cards-line.two {
+  grid-template-columns: 1fr 100px 1fr 100px 1fr 1fr 100px;
+}
+.Shlyah .cards-line.reverse {
+  grid-direction: row-reverse;
+}
+.Shlyah .cards-line .krok {
+  padding: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  background-color: #B6E388;
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: url(./img/logo-with-back.svg);
+  background-size: cover;
+  color: #000;
+  font-size: 22px;
+}
+.Shlyah .cards-line .card-img {
+  width: 100px;
+}
+.Shlyah .cards-line .opis {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.rotate90-wrap {
+  display: flex;
+  justify-content: center;
+}
+.rotate90-wrap .card-img {
+  transform: rotate(90deg);
+}
+
+.FeedBack {
+  overflow-x: scroll;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.FeedBack--wrap {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.FeedBack--img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.FeedBack--card {
+  background-color: #B6E388;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=elements.css.map */

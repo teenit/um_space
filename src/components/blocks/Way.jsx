@@ -59,7 +59,7 @@ const Way = ({activeHandler}) => {
                 {
                     ways.map((item, ind) => {
                         return (
-                            <div className="card" onClick={()=>activeHandler(item.key)}>
+                            <div key={ind} className="card" onClick={()=>activeHandler(item.key)}>
                                 <img src={waysImg[ind]} alt="" />
                                 <span>{item.title}</span>
                             </div>

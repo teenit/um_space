@@ -370,6 +370,7 @@ body {
                     text-transform: uppercase;
                     span {
                         font-size: 22px;
+                        font-weight: bold;
                     }
                 }
             }
@@ -556,6 +557,22 @@ body {
     .Shlyah .cards-line {
         display: flex;
         flex-direction: column;
+        &:nth-child(even){
+            max-height: 80px;
+           display: flex;
+        }
+        &:nth-child(3){
+            flex-direction: column-reverse;
+        }
+        
+    }
+    .Shlyah .cards{
+        display: grid;
+        grid-template-rows: 1fr max-content 1fr;
+        gap: 25px;
+    }
+    .card-img, .rotate90-wrap{
+        display: none !important;
     }
     .Gallery .wrap {
         grid-template-columns: 1fr;

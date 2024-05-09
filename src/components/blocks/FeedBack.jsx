@@ -12,22 +12,22 @@ const FeedBack = () => {
         <div className="FeedBack">
             <div className="FeedBack--wrap">
                 <div className="FeedBack--card">
-                    <img className="FeedBack--img" src={i1} alt="" srcset="" />
+                    <img className="FeedBack--img" src={i1} alt="" srcSet="" />
                 </div>
                 <div className="FeedBack--card">
-                    <img className="FeedBack--img" src={i2} alt="" srcset="" />
+                    <img className="FeedBack--img" src={i2} alt="" srcSet="" />
                 </div>
                 <div className="FeedBack--card">
-                    <img className="FeedBack--img" src={i3} alt="" srcset="" />
+                    <img className="FeedBack--img" src={i3} alt="" srcSet="" />
                 </div>
                 <div className="FeedBack--card">
-                    <img className="FeedBack--img" src={i4} alt="" srcset="" />
+                    <img className="FeedBack--img" src={i4} alt="" srcSet="" />
                 </div>
                 <div className="FeedBack--card">
-                    <img className="FeedBack--img" src={i5} alt="" srcset="" />
+                    <img className="FeedBack--img" src={i5} alt="" srcSet="" />
                 </div>
                 <div className="FeedBack--card">
-                    <img className="FeedBack--img" src={i6} alt="" srcset="" />
+                    <img className="FeedBack--img" src={i6} alt="" srcSet="" />
                 </div>
             </div>
         </div>

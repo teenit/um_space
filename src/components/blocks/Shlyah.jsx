@@ -1,142 +1,142 @@
 import React from "react";
 import b2 from './../../img/icons/b1.png';
-const SVG = ()=>{
+import star from "../../img/logo-with-back.svg"
+const SVG = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="12" viewBox="0 0 180 12" fill="none">
-            <line x1="18.2222" y1="5.5" x2="140.222" y2="5.5" stroke="#121264" stroke-dasharray="8 8" />
-            <circle cx="154.222" cy="6" r="6"  stroke="#B6E388" fill="#B6E388" stroke-width="4"/>
-            <circle cx="7.22223" cy="6" r="6"  stroke="#B6E388" stroke-width="4"/>
+            <line x1="18.2222" y1="5.5" x2="140.222" y2="5.5" stroke="#121264" strokeDasharray="8 8" />
+            <circle cx="154.222" cy="6" r="6" stroke="#B6E388" fill="#B6E388" strokeWidth="4" />
+            <circle cx="7.22223" cy="6" r="6" stroke="#B6E388" strokeWidth="4" />
         </svg>
     )
 }
 const Shlyah = () => {
 
-   
-    
+
+
 
     return (
         <div className="Shlyah">
-            <img className="b2" src={b2} alt="" />
             <div className="Shlyah-title">
                 <h2>Шлях до запису на заняття в UMSCHOOL</h2>
             </div>
             <div className="Shlyah-content">
                 <div className="cards">
                     <div className="cards-line">
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 1</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>1</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Зайти на наш сайт
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                                Зайти на наш сайт
-                            </p>
+                        <div className="card-img">
+                            <SVG />
                         </div>
-                    </div>
-                    <div className="card-img">
-                        <SVG />
-                    </div>
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 2</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>2</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Обрати напрямок який Вас цікавить
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                            Обрати напрямок який Вас цікавить
-                            </p>
+                        <div className="card-img">
+                            <SVG />
                         </div>
-                    </div>
-                    <div className="card-img">
-                    <SVG />
-                    </div>
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 3</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>3</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Записатись на первинну діагностику
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                            Записатись на первинну діагностику
-                            </p>
+                        <div className="card-img">
+                            <SVG />
                         </div>
-                    </div>
-                    <div className="card-img">
-                    <SVG />
-                    </div>
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 4</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>4</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Скласти індивідуальній графік занять зі спеціалістом
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                            Скласти індивідуальній графік занять зі спеціалістом
-                            </p>
-                        </div>
-                    </div>
                     </div>
                     <div className="cards-line reverse">
                         <div></div>
                         <div></div>
+                        <div><img className="b2" src={b2} alt="" /></div>
                         <div></div>
                         <div></div>
                         <div></div>
-                        <div></div>
-                        <div>
-                        <div className="card-img rotate90">
-                        <SVG />
+                        <div className="rotate90-wrap">
+                            <div className="card-img rotate90">
+                                <SVG />
+                            </div>
                         </div>
-                        </div>
-                       
+
                     </div>
                     <div className="cards-line reverse">
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 8</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>8</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Розпочати свою подорож до успішного майбутнього
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                            Розпочати свою подорож до успішного майбутнього
-                            </p>
+                        <div className="card-img">
+                            <SVG />
                         </div>
-                    </div>
-                    <div className="card-img">
-                    <SVG />
-                    </div>
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 7</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>7</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Відвідати первинну діагностику Зайти на наш сайт
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                            Відвідати первинну діагностику Зайти на наш сайт
-                            </p>
+                        <div className="card-img">
+                            <SVG />
                         </div>
-                    </div>
-                    <div className="card-img">
-                    <SVG />
-                    </div>
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 6</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>6</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Залишити свої контактні дані
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                            Залишити свої контактні дані
-                            </p>
+                        <div className="card-img">
+                            <SVG />
                         </div>
-                    </div>
-                    <div className="card-img">
-                    <SVG />
-                    </div>
-                    <div className="card">
-                        <div className="krok">
-                            <span>Крок 5</span>
+                        <div className="card">
+                            <div className="krok">
+                                <span>5</span>
+                            </div>
+                            <div className="opis">
+                                <p>
+                                    Ознайомитись з інформацією про нас
+                                </p>
+                            </div>
                         </div>
-                        <div className="opis">
-                            <p>
-                            Ознайомитись з інформацією про нас
-                            </p>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 {/* <div className="Shlyah-content-grid">

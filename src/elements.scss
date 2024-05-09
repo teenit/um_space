@@ -63,13 +63,13 @@ $yellow: #fff;
     width: 100%;
     .wrap {
         width: 100%;
+        height: 1320px;
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        height: 13₴0vh;
         background-color: $green;
-        gap: 10px;
+        gap: 25px;
         padding: 30px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -184,13 +184,7 @@ $yellow: #fff;
 
  .Shlyah {
     position: relative;
-    .b2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(0);
-        width: 80px;
-    }
+
     &-title {
         text-align: center;
     }
@@ -238,11 +232,22 @@ $yellow: #fff;
         align-items: center;
         column-gap: 20px;
         justify-content: space-between;
+        &:nth-child(even){
+            div{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &:nth-last-child(-n+1){
+            .card-img{
+                transform: rotate(180deg);
+            }
+        }
         &.two {
             grid-template-columns: 1fr 100px 1fr 100px 1fr 1fr 100px;
         }
         &.reverse {
-            grid-direction: row-reverse;
+           grid-direction: row-reverse;
         }
 
         .krok {
@@ -258,12 +263,14 @@ $yellow: #fff;
             align-items: center;
             justify-content: center;
             text-transform: uppercase;
+            background: url(./img/logo-with-back.svg);
+            background-size: cover;
+            color: #000;
+            font-size: 22px;
         }
         .card-img {
             width: 100px;
-            &.rotate90 {
-                transform: rotate(90deg);
-            }
+
         }
         .opis {
             text-align: center;
@@ -274,6 +281,13 @@ $yellow: #fff;
     // .card-img {
     //     width: 100px;
     // }
+ }
+ .rotate90-wrap{
+    display: flex;
+    justify-content: center;
+    .card-img{
+        transform: rotate(90deg);
+    }
  }
  .FeedBack {
     overflow-x: scroll;

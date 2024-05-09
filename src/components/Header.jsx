@@ -39,13 +39,10 @@ const Header = () => {
             <div className="Header-back">
                 <div className="Header-back-dark">
                     <div className="Header-block">
-                        <div className="Header-block-text">
+                        <div className="Header-block-text header-text">
                             <div className="text-content">
                                 <div className="slogan">
-                                    <h1>UM SCHOOL - <br /> центр розвитку Вашої дитини</h1>
-                                </div>
-                                <div className="description">
-                                    <p>Preschool, початкова школа</p>
+                                    <span className="slogan-word">UMSCHOOL</span> - міжнародна компанія, яка активно працює за авторською методикою Марини Усенко та допомагає дітям у всіх країнах світу з 2018 року. <br /><br />
                                 </div>
                                 <div className="button">
                                     <button className="btn">Записатися <img className="b4" src={b4} alt="" /></button>

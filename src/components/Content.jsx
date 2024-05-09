@@ -36,7 +36,7 @@ const Content = () => {
             <div className="block">
                 <div className="title">
                     <div className="title-text">
-                        <h2>Наші цінності</h2>
+                        <h2>Цінностями нашої компанії є:</h2>
                     </div>
                 </div>
                 <div className="content">
@@ -46,7 +46,7 @@ const Content = () => {
                                 <img src={imgLove} alt="" />
                             </div>
                             <div className="title">
-                                <p>любов</p>
+                                <p>Любов до дітей</p>
                             </div>
                         </div>
                         <div className="card">
@@ -54,7 +54,7 @@ const Content = () => {
                                 <img src={imgLight} alt="" />
                             </div>
                             <div className="title">
-                                <p>індивідуальний підхід до кожної дитини</p>
+                                <p>Високий рівень професіоналізму спеціалістів</p>
                             </div>
                         </div>
                         <div className="card">
@@ -62,7 +62,7 @@ const Content = () => {
                                 <img src={imgGarant} alt="" />
                             </div>
                             <div className="title">
-                                <p>професіоналізм</p>
+                                <p>Індивідуальний підхід до кожної дитини</p>
                             </div>
                         </div>
                     </div>
@@ -82,20 +82,9 @@ const Content = () => {
                                     </div>
                                 </div>
 
-                                <p>UMSCHOOL - міжнародна компанія, яка активно працює за авторською методикою Марини Усенко та допомагає дітям у всіх країнах світу з 2018 року.</p>
-                                <br />
-                                <h3>Цінності</h3>
-                                <ul>
-                                    <li>Любов до дітей</li>
-                                    <li>Високий рівень професіоналізму спеціалістів</li>
-                                    <li>Індивідуальний підхід до кожної дитини</li>
-                                </ul>
-                                <br />
-                                <h3>Наші методи</h3>
-                                <p>Ми використовуємо авторські напрацювання, які стали результатом 60 років праці родини засновниці UMSCHOOL Усенко Марини Геннадіївни. Ефективність методик перевірена на тисячах дітей, які зараз ведуть повноцінне життя.</p>
-                                <br />
-                                <h3>Наша мета</h3>
-                                <p>Ми завжди націлені на результат, тому прислухаємось до побажань клієнтів. Нашою основною метою є вивести розвиток дитини на норму, провести за руку від особливої до великої, виховати генія нового покоління.</p>
+                               <p> Ми використовуємо авторські напрацювання, які стали результатом 60 років праці родини засновниці UMSCHOOL Усенко Марини Геннадіївни.</p>
+                               <p> Ефективність методик перевірена на тисячах дітей, які зараз ведуть повноцінне життя.</p>
+                               <p> Ми завжди націлені на результат, тому прислухаємось до побажань клієнтів. Нашою основною метою є вивести розвиток дитини на норму, провести за руку від особливої до великої, виховати генія нового покоління.</p>
                                 <div className="button">
                                     <button className="btn">Записатися <img className="b4" src={b4} alt="" /></button>
                                 </div>
@@ -111,25 +100,28 @@ const Content = () => {
             <div className="triggers">
                 <Way activeHandler={activeHandler} />
             </div>
+            
+            <div className="block">
+                <Shlyah />
+            </div>
+            <div className="block">
+                <div className="title">
+                    <div className="title-text">
+                        <h2>Наші світлини</h2>
+                    </div>
+                </div>
+                <div className="content">
+                    <Gallery />
+                </div>
+            </div>
             <div className="triggers">
                 <div className="content">
                     <div className="cards">
-                        <div className="card">
-                            <div class="circle" />
-                            <span className="text">Авторська методика</span>
-                        </div>
-                        <div className="card">
-                            <div class="circle" />
-                            <span className="text">Відділ якості</span>
-                        </div>
-                        <div className="card">
-                            <div class="circle" />
-                            <span className="text">Душевні спеціалісти</span>
-                        </div>
+                       
                     </div>
                     <div className="with_btn">
                         <div className="text">
-                            <span>Комплексна діагностика розвитку дитини</span>
+                            <span>комплексна первинна діагностика</span>
                             <button className="btn" onClick={() => {
                                 setDiagnostics(!diagnostics)
                             }}
@@ -161,19 +153,6 @@ const Content = () => {
                         }
 
                     </div>
-                </div>
-            </div>
-            <div className="block">
-                <Shlyah />
-            </div>
-            <div className="block">
-                <div className="title">
-                    <div className="title-text">
-                        <h2>Наші світлини</h2>
-                    </div>
-                </div>
-                <div className="content">
-                    <Gallery />
                 </div>
             </div>
             <div className="block">

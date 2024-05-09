@@ -1,13 +1,13 @@
 import React from "react";
-import img1 from './../../img/photo_13_2024-04-01_01-18-26.jpg';
-import img2 from './../../img/photo_15_2024-04-01_01-18-26.jpg';
-import img3 from './../../img/photo_19_2024-04-01_01-18-26.jpg';
-import img4 from './../../img/photo_1_2024-04-01_01-18-26.jpg';
-import img5 from './../../img/photo_25_2024-04-01_01-18-26.jpg';
-import img6 from './../../img/photo_21_2024-04-01_01-18-26.jpg';
-import img7 from './../../img/photo_14_2024-04-01_01-18-26.jpg';
-import img8 from './../../img/photo_40_2024-04-01_01-18-26.jpg';
-import img9 from './../../img/photo_42_2024-04-01_01-18-26.jpg';
+import img1 from './../../img/new/2.JPG';
+import img2 from './../../img/new/3.JPG';
+import img3 from './../../img/new/4.JPG';
+import img4 from './../../img/new/5.JPG';
+import img5 from './../../img/new/6.JPG';
+import img6 from './../../img/new/7.JPG';
+import img7 from './../../img/new/8.JPG';
+import img8 from './../../img/new/9.JPG';
+import img9 from './../../img/new/10.JPG';
 
 
 
